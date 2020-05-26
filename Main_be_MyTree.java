@@ -4,9 +4,8 @@ public class Main_be_MyTree {
         if(depth==maxDepth)
             timesGoneRight++;
         else {
-            if (lossNumb == 0 && depth < maxDepth) {
+            if (lossNumb == 0 && depth < maxDepth)
                 insert(depth + 1, 1, 0, maxDepth);
-            }
 
             if (tieStreak<2 && depth < maxDepth)
                 insert(depth + 1, lossNumb, tieStreak+1,  maxDepth);
